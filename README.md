@@ -1,5 +1,45 @@
 # Movie-Recomendation-Syatem-Project
 * Movie Recommendation System — Project Overview
+* - Tools & Libraries Used
+- Python
+The core programming language used for the entire project.
+
+Known for its rich ecosystem of libraries, especially in data science and machine learning.
+
+- Libraries
+1. Pandas
+Purpose: Data manipulation and analysis
+
+Used for: Loading the dataset, selecting relevant features, handling missing values, and preprocessing text.
+
+import pandas as pd
+2. Scikit-learn (sklearn)
+Purpose: Machine learning and data preprocessing
+
+Used for:
+
+CountVectorizer: Converts text data into a numerical matrix using the bag-of-words model.
+
+cosine_similarity: Computes similarity between movie vectors to enable recommendations.
+
+from sklearn.feature_extraction.text import CountVectorizer
+from sklearn.metrics.pairwise import cosine_similarity
+3. Pickle
+Purpose: Object serialization
+
+Used for: Saving the processed data (movies_list.pkl) and similarity matrix (similarity.pkl) to avoid reprocessing during future use.
+
+import pickle
+- Jupyter Notebook
+Purpose: Interactive development and visualization
+
+Used for: Writing and running the project code in a step-by-step, exploratory manner.
+
+- CSV File
+File Name: New Movies Dataset.csv
+
+Purpose: Data source for the movie metadata
+
 - Objective
 The aim of this project is to design and implement a content-based movie recommendation system that suggests films with similar themes and genres. The system analyzes textual metadata such as movie overviews and genres to compute similarity scores and generate recommendations.
 
